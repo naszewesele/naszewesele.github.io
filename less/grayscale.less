@@ -36,14 +36,14 @@ h6 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
@@ -53,6 +53,14 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+}
+
+.dark-color {
+    color: @dark;
+}
+
+.light-color {
+    color: @light;
 }
 
 a:hover,
@@ -156,6 +164,51 @@ a:focus {
     display: table-cell;
     vertical-align: top;
     padding-top: 0px;
+}
+
+.kolegiata {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    color: @dark;
+    background: url(../img/kolegiata-sw-anny-pawel-krzan.jpg) no-repeat bottom center scroll;     
+    background-color: @light;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 50px;
+}
+
+.folwark {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    color: @dark;
+    background: url(../img/folwark.jpg) no-repeat top center scroll;     
+    background-color: @light;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 50px;
+}
+
+.pic-header {
+    position: absolute;
+    padding: 30px 0 0px 0;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+ 
+}
+
+.alpha-header {
+   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.big-header {
+    font-size: 50px;    
 }
 
 .brand-heading {
@@ -273,7 +326,8 @@ a:focus {
  // Content Sections 
 
  .content-section {
-    padding-top: 100px;
+    margin-top: 40px;
+    padding-top: 60px;
 }
 
 .download-section {
@@ -288,6 +342,7 @@ a:focus {
     -o-background-size: cover;
 }
 
+
 #map {
     width: 100%;
     height: 200px;
@@ -296,7 +351,8 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        margin-top: 190px;
+        padding-top: 60px;
     }
 
     .download-section {
